@@ -89,18 +89,35 @@
     .proj-links{display:flex; flex-wrap:wrap; gap:10px; margin-top:8px}
     .proj-links a{color:var(--accent); font-weight:750}
     footer{margin-top:18px; color:var(--muted); font-size:12px; text-align:center}
+
+    .bottom-photo{
+      margin-top:18px;
+      border:1px solid var(--line);
+      border-radius:var(--radius);
+      overflow:hidden;
+      background: rgba(0,0,0,.15);
+    }
+    .bottom-photo img{
+      display:block;
+      width:100%;
+      height:min(60vh, 520px);
+      object-fit:cover;
+    }
+
     @media (max-width: 860px){
       header{flex-direction:column}
       .cta{align-items:stretch; min-width:unset}
       main{grid-template-columns:1fr}
+      .bottom-photo img{height:min(40vh, 420px)}
     }
     @media print{
       body{background:#fff; color:#000}
-      header, section{background:#fff; border:1px solid #ddd}
+      header, section, .bottom-photo{background:#fff; border:1px solid #ddd}
       a{color:#000; text-decoration:none}
       .btn{display:none}
       .wrap{padding:0}
       footer{display:none}
+      .bottom-photo img{height:auto; object-fit:contain}
     }
   </style>
 </head>
@@ -269,6 +286,10 @@
     <footer>
       Hosted on AWS using S3 + CloudFront (custom domain via Route 53 + HTTPS via ACM) • Monitoring with CloudWatch + SNS • CI/CD with GitHub Actions
     </footer>
+
+    <div class="bottom-photo">
+      <img src="bottom.jpg" alt="Photo" />
+    </div>
   </div>
 </body>
 </html>
