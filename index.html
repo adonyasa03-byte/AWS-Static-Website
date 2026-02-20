@@ -139,17 +139,18 @@
 
           <div class="item">
             <div class="row">
-              <div class="proj-title">AWS Hosted Portfolio Website (S3 + CloudFront + Route 53 + ACM)</div>
-              <div class="when">In progress</div>
+              <div class="proj-title">AWS Hosted Portfolio Website (S3 + CloudFront + Route 53 + ACM + CloudWatch + SNS)</div>
+              <div class="when">Live</div>
             </div>
-            <p class="small">This site, served by CloudFront with an S3 origin and HTTPS.</p>
+            <p class="small">A production-style static site: private S3 origin behind CloudFront, custom domain, HTTPS, monitoring, and CI/CD.</p>
             <ul>
-              <li>Configured S3 as the origin and set CloudFront behaviors for fast global delivery.</li>
-              <li>Used a custom domain with HTTPS (ACM) and documented the deployment steps.</li>
-              <li>Handled updates by replacing <b>index.html</b> and using CloudFront invalidations when needed.</li>
+              <li>Hosted site files in a private S3 bucket in <b>us-west-1</b> (versioning + SSE-S3) and secured origin access using CloudFront <b>OAC</b> (no public S3 access).</li>
+              <li>Configured Route 53 DNS + ACM certificate and enforced HTTPS (HTTP → HTTPS redirect) through CloudFront.</li>
+              <li>Set CloudFront cache policy to <b>CachingDisabled</b> for fast updates; GitHub Actions deploys to S3 on every push and triggers a CloudFront invalidation.</li>
+              <li>Built a CloudWatch dashboard and alarms for <b>4xx</b>/<b>5xx</b> error rates; alarms notify via <b>SNS email</b>.</li>
             </ul>
             <div class="proj-links">
-              <a href="#" onclick="return false;">Live</a>
+              <a href="https://adonyas.com" target="_blank" rel="noreferrer">Live</a>
               <a href="https://github.com/adonyasa03-byte/AWS-Static-Website" target="_blank" rel="noreferrer">GitHub Repo</a>
             </div>
           </div>
@@ -221,6 +222,11 @@
             <span class="chip">IAM (learning)</span>
             <span class="chip">S3</span>
             <span class="chip">CloudFront</span>
+            <span class="chip">Route 53</span>
+            <span class="chip">ACM</span>
+            <span class="chip">CloudWatch</span>
+            <span class="chip">SNS</span>
+            <span class="chip">GitHub Actions</span>
             <span class="chip">Git</span>
             <span class="chip">Java</span>
           </div>
@@ -261,7 +267,7 @@
     </main>
 
     <footer>
-      Hosted on AWS using S3 + CloudFront (custom domain via Route 53 + HTTPS via ACM)
+      Hosted on AWS using S3 + CloudFront (custom domain via Route 53 + HTTPS via ACM) • Monitoring with CloudWatch + SNS • CI/CD with GitHub Actions
     </footer>
   </div>
 </body>
