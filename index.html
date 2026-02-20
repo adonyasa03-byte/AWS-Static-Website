@@ -1,0 +1,268 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Adonyas Argaw | UW Computer Science | AWS Cloud Portfolio" />
+  <title>Adonyas Argaw | AWS Portfolio</title>
+  <style>
+    :root{
+      --bg:#0b1220;
+      --card:rgba(255,255,255,.03);
+      --text:#e8eefc;
+      --muted:#b7c4e6;
+      --line:rgba(255,255,255,.10);
+      --chip:rgba(255,255,255,.10);
+      --accent:#8ab4ff;
+      --radius:18px;
+      --max:980px;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0;
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial;
+      background: var(--bg);
+      color:var(--text);
+      line-height:1.5;
+    }
+    a{color:var(--text); text-decoration:none}
+    a:hover{opacity:.9; text-decoration:underline}
+    .wrap{max-width:var(--max); margin:0 auto; padding:28px 18px 60px}
+    header{
+      display:flex; gap:18px; align-items:flex-start; justify-content:space-between;
+      border:1px solid var(--line);
+      background: var(--card);
+      border-radius:var(--radius);
+      padding:22px;
+    }
+    .left{max-width:700px}
+    .name{font-size:28px; font-weight:850; letter-spacing:.2px; margin:0 0 6px}
+    .tag{margin:0; color:var(--muted); font-size:14px}
+    .meta{margin-top:14px; display:flex; flex-wrap:wrap; gap:10px}
+    .meta a,.meta span{
+      border:1px solid var(--line);
+      background: rgba(0,0,0,.15);
+      padding:7px 10px;
+      border-radius:999px;
+      font-size:13px;
+      color:var(--muted);
+      white-space:nowrap;
+    }
+    .cta{display:flex; flex-direction:column; gap:10px; align-items:flex-end; min-width:230px}
+    .btn{
+      width:100%;
+      border:1px solid var(--line);
+      background: rgba(138,180,255,.14);
+      padding:10px 12px;
+      border-radius:12px;
+      font-weight:750;
+      text-align:center;
+    }
+    .btn.secondary{background: rgba(255,255,255,.06)}
+    main{margin-top:18px; display:grid; grid-template-columns: 1.2fr .8fr; gap:18px}
+    section{
+      border:1px solid var(--line);
+      background: var(--card);
+      border-radius:var(--radius);
+      padding:18px;
+    }
+    h2{margin:0 0 12px; font-size:15px; letter-spacing:.2px; text-transform:uppercase; color:var(--muted)}
+    .small{color:var(--muted); font-size:13px; margin:0}
+    .item{padding:12px 0; border-top:1px solid var(--line)}
+    .item:first-of-type{border-top:0; padding-top:0}
+    .row{display:flex; justify-content:space-between; gap:10px; align-items:baseline}
+    .role{font-weight:800}
+    .where,.when{color:var(--muted); font-size:13px}
+    ul{margin:8px 0 0 18px; padding:0}
+    li{margin:6px 0}
+    .chips{display:flex; flex-wrap:wrap; gap:8px}
+    .chip{
+      font-size:13px;
+      color:var(--text);
+      background: var(--chip);
+      border:1px solid var(--line);
+      padding:7px 10px;
+      border-radius:999px;
+    }
+    .proj-title{font-weight:850}
+    .proj-links{display:flex; flex-wrap:wrap; gap:10px; margin-top:8px}
+    .proj-links a{color:var(--accent); font-weight:750}
+    footer{margin-top:18px; color:var(--muted); font-size:12px; text-align:center}
+    @media (max-width: 860px){
+      header{flex-direction:column}
+      .cta{align-items:stretch; min-width:unset}
+      main{grid-template-columns:1fr}
+    }
+    @media print{
+      body{background:#fff; color:#000}
+      header, section{background:#fff; border:1px solid #ddd}
+      a{color:#000; text-decoration:none}
+      .btn{display:none}
+      .wrap{padding:0}
+      footer{display:none}
+    }
+  </style>
+</head>
+
+<body>
+  <div class="wrap">
+    <header>
+      <div class="left">
+        <h1 class="name">Adonyas Argaw</h1>
+        <p class="tag">Computer Science Student, University of Washington (Seattle) • Building toward AWS Cloud / DevOps • Seattle, WA</p>
+
+        <div class="meta">
+          <span>Seattle, WA</span>
+          <a href="mailto:adonyasa@uw.edu">adonyasa@uw.edu</a>
+          <a href="https://www.linkedin.com/in/adonyas-argaw-012b47359/" target="_blank" rel="noreferrer">LinkedIn</a>
+          <a href="[YOUR_GITHUB_LINK]" target="_blank" rel="noreferrer">GitHub</a>
+        </div>
+
+        <p class="small" style="margin-top:14px;">
+          I’m Adonyas Argaw, an undergraduate Computer Science student at the University of Washington in Seattle. I’m building toward an AWS-focused career and currently in active cloud training, learning core AWS services and how to deploy and operate real systems. I’m strongest when I can combine hands-on troubleshooting with building clean, repeatable setups (Linux, scripting, IAM permissions, networking basics, monitoring). I’m looking for an entry-level role where I can grow fast in AWS (Cloud Support, DevOps, SRE/operations, or Cloud Engineer I) and contribute on day one with strong ownership, documentation, and a customer or internal support mindset.
+        </p>
+      </div>
+
+      <div class="cta">
+        <a class="btn" href="#projects">AWS Projects</a>
+        <a class="btn secondary" href="#experience">Experience</a>
+        <a class="btn secondary" href="#education">Education</a>
+        <a class="btn secondary" href="#skills">Skills</a>
+      </div>
+    </header>
+
+    <main>
+      <div>
+        <section id="projects">
+          <h2>AWS Projects</h2>
+
+          <div class="item">
+            <div class="row">
+              <div class="proj-title">AWS Hosted Portfolio Website (S3 + CloudFront + Route 53 + ACM)</div>
+              <div class="when">In progress</div>
+            </div>
+            <p class="small">This site, served by CloudFront with an S3 origin and HTTPS.</p>
+            <ul>
+              <li>Configured S3 as the origin and set CloudFront behaviors for fast global delivery.</li>
+              <li>Used a custom domain with HTTPS (ACM) and documented the deployment steps.</li>
+              <li>Handled updates by replacing <b>index.html</b> and using CloudFront invalidations when needed.</li>
+            </ul>
+            <div class="proj-links">
+              <a href="#" onclick="return false;">Live</a>
+              <a href="[YOUR_REPO_LINK_FOR_THIS_SITE]" target="_blank" rel="noreferrer">GitHub Repo</a>
+            </div>
+          </div>
+
+          <div class="item">
+            <div class="row">
+              <div class="proj-title">[Next Project Placeholder] (API Gateway + Lambda + DynamoDB)</div>
+              <div class="when">Planned</div>
+            </div>
+            <p class="small">Add this once you build it. This is a strong interview project for AWS roles.</p>
+            <ul>
+              <li>Implement a simple CRUD API and enforce IAM least privilege between services.</li>
+              <li>Add CloudWatch logs/alarms and a short runbook for troubleshooting.</li>
+            </ul>
+            <div class="proj-links">
+              <a href="[DEMO_LINK]" target="_blank" rel="noreferrer">Demo</a>
+              <a href="[REPO_LINK]" target="_blank" rel="noreferrer">GitHub Repo</a>
+            </div>
+          </div>
+        </section>
+
+        <section id="experience" style="margin-top:18px;">
+          <h2>Experience</h2>
+
+          <div class="item">
+            <div class="row">
+              <div class="role">AI Trainer (Contract)</div>
+              <div class="where">Outlier • Contract • Remote</div>
+            </div>
+            <div class="when">Jun 2025 – Present</div>
+            <ul>
+              <li>Complete AI training and evaluation tasks focused on response quality, accuracy, and policy compliance.</li>
+              <li>Write clear feedback and follow rubric-based requirements while handling edge cases.</li>
+              <li>Work independently with consistent delivery and strong attention to detail.</li>
+            </ul>
+          </div>
+        </section>
+
+        <section id="coursework" style="margin-top:18px;">
+          <h2>Relevant Coursework</h2>
+          <p class="small">Selected UW CSE courses from your profile.</p>
+          <div class="item">
+            <div class="chips">
+              <span class="chip">CSE 331 Software Design & Implementation</span>
+              <span class="chip">CSE 351 Hardware/Software Interface</span>
+              <span class="chip">CSE 332 Data Structures & Parallelism</span>
+              <span class="chip">CSE 444 Database Systems Internals</span>
+              <span class="chip">CSE 484 Computer Security</span>
+              <span class="chip">CSE 473 Artificial Intelligence</span>
+              <span class="chip">CSE 446 Machine Learning</span>
+              <span class="chip">CSE 447 Natural Language Processing</span>
+              <span class="chip">CSE 442 Data Visualization</span>
+              <span class="chip">CSE 344 Intro Data Management</span>
+              <span class="chip">CSE 311 Foundations of Computing I</span>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <div>
+        <section id="skills">
+          <h2>Skills</h2>
+          <div class="chips">
+            <span class="chip">Amazon Web Services (AWS)</span>
+            <span class="chip">Cloud Computing (training)</span>
+            <span class="chip">Debugging</span>
+            <span class="chip">Linux (basics)</span>
+            <span class="chip">Networking (basics)</span>
+            <span class="chip">IAM (learning)</span>
+            <span class="chip">S3</span>
+            <span class="chip">CloudFront</span>
+            <span class="chip">Git</span>
+            <span class="chip">Java</span>
+          </div>
+          <p class="small" style="margin-top:12px;">
+            Focused on building AWS projects that show deploy, security, monitoring, and troubleshooting.
+          </p>
+        </section>
+
+        <section id="education" style="margin-top:18px;">
+          <h2>Education</h2>
+          <div class="item">
+            <div class="row">
+              <div class="role">University of Washington</div>
+              <div class="when">Sep 2021 – Jun 2026</div>
+            </div>
+            <div class="where">Bachelor's degree, Computer Science</div>
+          </div>
+          <div class="item">
+            <div class="row">
+              <div class="role">University of Washington College of Engineering</div>
+              <div class="when">Jan 2023 – Jun 2026</div>
+            </div>
+            <div class="where">Computer Science (UW)</div>
+          </div>
+        </section>
+
+        <section id="certs" style="margin-top:18px;">
+          <h2>Certs / Training</h2>
+          <div class="item">
+            <div class="row">
+              <div class="role">AWS Cloud Training</div>
+              <div class="when">In progress</div>
+            </div>
+            <p class="small">Add the exact program name here (Skill Builder, re/Start, course name) and the date you expect to finish.</p>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <footer>
+      Hosted on AWS using S3 + CloudFront (custom domain via Route 53 + HTTPS via ACM)
+    </footer>
+  </div>
+</body>
+</html>
