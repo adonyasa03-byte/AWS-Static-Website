@@ -120,7 +120,7 @@
         </div>
 
         <p class="small" style="margin-top:14px;">
-          I’m Adonyas Argaw, an undergraduate Computer Science student at the University of Washington in Seattle. I’m building toward an AWS-focused career and currently in active cloud training, learning core AWS services and how to deploy and operate real systems. I’m strongest when I can combine hands-on troubleshooting with building clean, repeatable setups (Linux, scripting, IAM permissions, networking basics, monitoring). I’m looking for an entry-level role where I can grow fast in AWS (Cloud Support, DevOps, SRE/operations, or Cloud Engineer I) and contribute on day one with strong ownership, documentation, and a customer or internal support mindset.
+          I’m Adonyas Argaw, an undergraduate Computer Science student at the University of Washington in Seattle. I’m building toward an AWS-focused career and developing hands-on experience with cloud infrastructure, troubleshooting, and deployment through practical projects. My current focus is on core AWS services, IAM, networking fundamentals, and serverless application design, while also preparing for the AWS Certified Solutions Architect - Associate (SAA-C03) certification. I’m looking for an entry-level role where I can grow quickly in cloud, support, DevOps, or infrastructure engineering and contribute with strong ownership, documentation, and a reliable execution mindset.
         </p>
       </div>
 
@@ -139,19 +139,35 @@
 
           <div class="item">
             <div class="row">
-              <div class="proj-title">AWS Hosted Portfolio Website (S3 + CloudFront + Route 53 + ACM + CloudWatch + SNS)</div>
-              <div class="when">Live</div>
+              <div class="proj-title">AWS Hosted Portfolio Website (S3 + CloudFront + Route 53 + ACM)</div>
+              <div class="when">Completed</div>
             </div>
-            <p class="small">A production-style static site: private S3 origin behind CloudFront, custom domain, HTTPS, monitoring, and CI/CD.</p>
+            <p class="small">Personal portfolio site hosted on AWS with static content delivery, HTTPS, and custom domain configuration.</p>
             <ul>
-              <li>Hosted site files in a private S3 bucket in <b>us-west-1</b> (versioning + SSE-S3) and secured origin access using CloudFront <b>OAC</b> (no public S3 access).</li>
-              <li>Configured Route 53 DNS + ACM certificate and enforced HTTPS (HTTP → HTTPS redirect) through CloudFront.</li>
-              <li>Set CloudFront cache policy to <b>CachingDisabled</b> for fast updates; GitHub Actions deploys to S3 on every push and triggers a CloudFront invalidation.</li>
-              <li>Built a CloudWatch dashboard and alarms for <b>4xx</b>/<b>5xx</b> error rates; alarms notify via <b>SNS email</b>.</li>
+              <li>Configured Amazon S3 as the origin and used CloudFront for secure global delivery.</li>
+              <li>Connected a custom domain with Route 53 and HTTPS through AWS Certificate Manager.</li>
+              <li>Handled content updates through versioned file changes and CloudFront invalidations.</li>
             </ul>
             <div class="proj-links">
-              <a href="https://adonyas.com" target="_blank" rel="noreferrer">Live</a>
+              <a href="#" onclick="return false;">Live</a>
               <a href="https://github.com/adonyasa03-byte/AWS-Static-Website" target="_blank" rel="noreferrer">GitHub Repo</a>
+            </div>
+          </div>
+
+          <div class="item">
+            <div class="row">
+              <div class="proj-title">Serverless Personal Expense Tracker (S3 + API Gateway + Lambda + DynamoDB)</div>
+              <div class="when">Completed</div>
+            </div>
+            <p class="small">Serverless web application for recording expenses, viewing transaction history, and calculating monthly spending totals.</p>
+            <ul>
+              <li>Built a static frontend hosted in Amazon S3 and connected it to a backend API using API Gateway and AWS Lambda.</li>
+              <li>Used DynamoDB to store expense records and support queries for listing transactions and calculating monthly totals.</li>
+              <li>Configured IAM permissions and CORS to allow secure communication between the frontend, API, and database layers.</li>
+            </ul>
+            <div class="proj-links">
+              <a href="http://adonyas-expense-tracker-site.s3-website-us-west-1.amazonaws.com/" target="_blank" rel="noreferrer">Live Demo</a>
+              <a href="https://github.com/adonyasa03-byte/expense-tracker-serverless/tree/main" target="_blank" rel="noreferrer">GitHub Repo</a>
             </div>
           </div>
         </section>
@@ -175,7 +191,7 @@
 
         <section id="coursework" style="margin-top:18px;">
           <h2>Relevant Coursework</h2>
-          <p class="small">Selected UW CSE courses from your profile.</p>
+          <p class="small">Selected UW CSE courses from your academic background.</p>
           <div class="item">
             <div class="chips">
               <span class="chip">CSE 331 Software Design & Implementation</span>
@@ -199,23 +215,22 @@
           <h2>Skills</h2>
           <div class="chips">
             <span class="chip">Amazon Web Services (AWS)</span>
-            <span class="chip">Cloud Computing (training)</span>
-            <span class="chip">Debugging</span>
-            <span class="chip">Linux (basics)</span>
-            <span class="chip">Networking (basics)</span>
-            <span class="chip">IAM (learning)</span>
+            <span class="chip">AWS Solutions Architect Associate (SAA-C03) Prep</span>
+            <span class="chip">Serverless Architecture</span>
+            <span class="chip">API Gateway</span>
+            <span class="chip">AWS Lambda</span>
+            <span class="chip">DynamoDB</span>
             <span class="chip">S3</span>
             <span class="chip">CloudFront</span>
-            <span class="chip">Route 53</span>
-            <span class="chip">ACM</span>
-            <span class="chip">CloudWatch</span>
-            <span class="chip">SNS</span>
-            <span class="chip">GitHub Actions</span>
+            <span class="chip">IAM</span>
             <span class="chip">Git</span>
+            <span class="chip">Linux (basics)</span>
+            <span class="chip">Networking (basics)</span>
+            <span class="chip">Debugging</span>
             <span class="chip">Java</span>
           </div>
           <p class="small" style="margin-top:12px;">
-            Focused on building AWS projects that show deploy, security, monitoring, and troubleshooting.
+            Focused on building AWS projects that demonstrate deployment, permissions, troubleshooting, and practical cloud architecture decisions.
           </p>
         </section>
 
@@ -233,7 +248,7 @@
               <div class="role">University of Washington College of Engineering</div>
               <div class="when">Jan 2023 – Jun 2026</div>
             </div>
-            <div class="where">Computer Science</div>
+            <div class="where">Computer Science (UW)</div>
           </div>
         </section>
 
@@ -241,17 +256,17 @@
           <h2>Certs / Training</h2>
           <div class="item">
             <div class="row">
-              <div class="role">AWS Skill Builder</div>
+              <div class="role">AWS Certified Solutions Architect - Associate (SAA-C03)</div>
               <div class="when">In progress</div>
             </div>
-            <p class="small">Cloud Practitioner Essentials (AWS Skill Builder).</p>
+            <p class="small">Currently preparing for the SAA-C03 certification while building hands-on AWS projects across storage, networking, IAM, and serverless services.</p>
           </div>
         </section>
       </div>
     </main>
 
     <footer>
-      Hosted on AWS using S3 + CloudFront (custom domain via Route 53 + HTTPS via ACM) • Monitoring with CloudWatch + SNS • CI/CD with GitHub Actions
+      Hosted on AWS using S3 + CloudFront (custom domain via Route 53 + HTTPS via ACM)
     </footer>
   </div>
 </body>
